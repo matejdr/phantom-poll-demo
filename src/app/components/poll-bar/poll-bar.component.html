@@ -1,0 +1,7 @@
+<div *ngIf="pollResponse" class="barOuter">
+  <span>{{pollResponse.score}}</span>
+  <div class="bar" [style.height.px]="getHeight()" [style.background-color]="getBackgroundColor()"></div>
+  <button class="vote" [class.selected]="selected"
+          [disabled]="!votingEnabled"
+          (click)="onSelect(pollResponse.id)">{{pollResponse.title}}</button>
+</div>

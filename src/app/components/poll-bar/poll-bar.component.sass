@@ -1,0 +1,29 @@
+.barOuter
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: flex-end
+  height: 100%
+
+  .bar
+    width: 100px
+    padding: 5px
+    background-color: #df2806
+    margin: 5px
+    min-height: 5px
+
+  .vote
+    color: #333
+    background-color: #eee
+    margin-top: 10px
+    border-radius: 4px
+    padding: 5px
+    width: 60%
+
+    &:hover, &:disabled
+      color: white
+      background-color: #42545C
+
+  .selected, .selected:hover, .selected:disabled
+    background-color: #4c8f55
+

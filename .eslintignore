@@ -1,0 +1,4 @@
+package.json
+dist
+e2e/**
+karma.conf.js

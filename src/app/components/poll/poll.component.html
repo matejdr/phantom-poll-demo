@@ -1,0 +1,10 @@
+<div *ngIf="poll" class="pollHolder">
+  <span class="pollTitle">{{poll.title}}</span>
+  <div class="barHolder">
+    <app-poll-bar *ngFor="let response of poll.responses; let i = index"
+                  [pollResponse]="response"
+                  [votingEnabled]="poll.canUserVote"
+                  [maxScore]="maxScore"
+                  [index]="i"></app-poll-bar>
+  </div>
+</div>
